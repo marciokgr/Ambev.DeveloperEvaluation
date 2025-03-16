@@ -1,6 +1,5 @@
-version: '3.8'
-
 services:
+
   ambev.developerevaluation.webapi:
     container_name: ambev_developer_evaluation_webapi
     image: ${DOCKER_REGISTRY-}ambevdeveloperevaluationwebapi
@@ -20,14 +19,14 @@ services:
 
   ambev.developerevaluation.database:
     container_name: ambev_developer_evaluation_database
-    image: postgres:13
+    image: postgres:16
 
     environment:
       POSTGRES_DB: developer_evaluation
       POSTGRES_USER: developer
       POSTGRES_PASSWORD: ev@luAt10n
     ports:
-      - "5432"
+      - "5432:5432"
     restart: unless-stopped
 
   ambev.developerevaluation.nosql:
@@ -44,7 +43,7 @@ services:
     image: redis:7.4.1-alpine     
     command: redis-server --requirepass ev@luAt10n
     environment:
-       MONGO_INITDB_ROOT_USERNAME: developer
-       MONGO_INITDB_ROOT_PASSWORD: ev@luAt10n
+       REDIS_INITDB_ROOT_USERNAME: developer
+       REDIS_INITDB_ROOT_PASSWORD: ev@luAt10n
     ports:
        - "6379"

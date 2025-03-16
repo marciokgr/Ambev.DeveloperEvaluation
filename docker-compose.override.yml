@@ -1,0 +1,14 @@
+services:
+
+  ambev.developerevaluation.database:
+    container_name: ambev.developerevaluation.database
+    restart: on-failure
+    volumes:
+      - ./shared-run/postgresql/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: developer_evaluation
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: ev@luAt10n
+
+    ports:
+      - "5432:5432"
