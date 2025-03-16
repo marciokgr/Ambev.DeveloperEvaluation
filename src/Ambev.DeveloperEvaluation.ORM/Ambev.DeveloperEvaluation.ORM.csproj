@@ -6,6 +6,11 @@
 		<Title>Vendor-Test-Gen-0001</Title>
 	</PropertyGroup>
 	<ItemGroup>
+	  <Compile Remove="src\**" />
+	  <EmbeddedResource Remove="src\**" />
+	  <None Remove="src\**" />
+	</ItemGroup>
+	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -13,6 +18,7 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.10" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.0.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Domain\Ambev.DeveloperEvaluation.Domain.csproj" />

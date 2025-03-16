@@ -46,6 +46,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
 
         // Chave estrangeira para o carrinho
         public Guid CartId { get; set; }
+
         public Cart Cart { get; set; }
 
         /// <summary>
