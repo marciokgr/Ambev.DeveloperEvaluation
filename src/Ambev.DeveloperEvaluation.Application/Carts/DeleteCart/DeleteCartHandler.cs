@@ -1,6 +1,6 @@
 using Ambev.DeveloperEvaluation.Application.CartItems.DeleteCartItems;
 using Ambev.DeveloperEvaluation.Application.CartItems.ListCartItemsByCartId;
-using Ambev.DeveloperEvaluation.Domain.Repositories;
+using Ambev.DeveloperEvaluation.Domain.Services;
 using FluentValidation;
 using MediatR;
 

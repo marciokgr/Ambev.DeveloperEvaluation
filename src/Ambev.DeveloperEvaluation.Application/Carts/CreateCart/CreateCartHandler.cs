@@ -1,6 +1,6 @@
 using Ambev.DeveloperEvaluation.Application.CartItems.CreateCartItems;
 using Ambev.DeveloperEvaluation.Domain.Entities;
-using Ambev.DeveloperEvaluation.Domain.Repositories;
+using Ambev.DeveloperEvaluation.Domain.Services;
 using AutoMapper;
 using FluentValidation;
 using MediatR;

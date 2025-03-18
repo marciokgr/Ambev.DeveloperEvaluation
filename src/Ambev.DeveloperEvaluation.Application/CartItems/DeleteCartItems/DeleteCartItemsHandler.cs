@@ -1,4 +1,4 @@
-using Ambev.DeveloperEvaluation.Domain.Repositories;
+using Ambev.DeveloperEvaluation.Domain.Services;
 using MediatR;
 
 namespace Ambev.DeveloperEvaluation.Application.CartItems.DeleteCartItems;
