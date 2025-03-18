@@ -1,6 +1,6 @@
 using Ambev.DeveloperEvaluation.Domain.Entities;
 
-namespace Ambev.DeveloperEvaluation.Domain.Repositories;
+namespace Ambev.DeveloperEvaluation.Domain.Services;
 
 /// <summary>
 /// Repository interface for User entity operations

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
 using FluentValidation;
-using Ambev.DeveloperEvaluation.Domain.Repositories;
 using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Common.Security;
+using Ambev.DeveloperEvaluation.Domain.Services;
 
 namespace Ambev.DeveloperEvaluation.Application.Users.CreateUser;
 
